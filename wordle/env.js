@@ -1,0 +1,1 @@
+export const isCreative = !!Deno.env.get('CREATIVE_MODE')
