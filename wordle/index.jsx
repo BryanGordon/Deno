@@ -22,7 +22,6 @@ const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`)
 
 if (isCreative) {
   writePokemonFile(pokemon)
-  console.log(isCreative)
 }
 
 function askWord () {
@@ -96,7 +95,6 @@ function start (tries) {
     print(guess)
     tries++
     console.log('')
-    console.log(tries)
     start(tries)
   }
 
