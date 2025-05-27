@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@std/fmt": "jsr:@std/fmt/colors",
+    "dotenv": "jsr:@std/dotenv/load",
+    "bool": "npm:to-boolean"
+  }
+}
