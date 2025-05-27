@@ -1,4 +1,5 @@
-import { bold, white, bgGreen, bgYellow, bgBrightBlack } from "jsr:@std/fmt/colors"
+// import { bold, white, bgGreen, bgYellow, bgBrightBlack } from "jsr:@std/fmt/colors"
+import {bold, white, bgGreen, bgYellow, bgBrightBlack} from '@std/fmt'
 import { isCreative } from './env.js'
 import { writePokemonFile } from './file.js'
 
@@ -21,6 +22,7 @@ const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`)
 
 if (isCreative) {
   writePokemonFile(pokemon)
+  console.log(isCreative)
 }
 
 function askWord () {
